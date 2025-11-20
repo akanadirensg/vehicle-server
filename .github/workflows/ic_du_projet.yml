@@ -1,0 +1,14 @@
+name: IC du projet
+on:
+  - push
+jobs:
+  ic_du_projet:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22.x'
+      - run: npm install
+      - run: npm run build
+      - run: ls /dist
