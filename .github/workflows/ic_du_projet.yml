@@ -11,4 +11,4 @@ jobs:
           node-version: '22.x'
       - run: npm install
       - run: npm run build
-      - run: ls -l /dist
+      - run: ls -l dist
