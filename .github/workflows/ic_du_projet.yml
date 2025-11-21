@@ -1,6 +1,7 @@
 name: IC du projet
 on:
   - push
+  - pull_request
 jobs:
   ic_du_projet:
     runs-on: ubuntu-24.04
